@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>snippets_test</title>
+<style>
+body { margin: 0px; padding: 0px; }
+h1,h2,h3,h4,h5,h6 { background: #034 ; color: white; padding-left: 3px;}
+code.c { background: #EEE}
+code.r { background: #AEE}
+code { padding-left: 10px }
+</style>
+</head>
+<body>
+<h1>snippets_test</h1>
+<h2>string to array....</h2>
+<code class='c'>"a,b,c,d".split(/,/) </code>=> <code class='r'>["a", "b", "c", "d"]</code><br/>
+<code class='c'>"a,bb,c".scan(/\w+/) </code>=> <code class='r'>["a", "bb", "c"]</code><br/>
+<h3>array to string ....</h3>
+<code class='c'>[1,2,3].inspect </code>=> <code class='r'>"[1, 2, 3]"</code><br/>
+<code class='c'>[1,2,3].join(",") </code>=> <code class='r'>"1,2,3"</code><br/>
+<h3>array to hash ....</h3>
+<code class='c'>Hash[1,2,3,4] </code>=> <code class='r'>{1=&gt;2, 3=&gt;4}</code><br/>
+<code class='c'>@h=[1,2,3,4,5,6,7,8].group_by {|v| v%4} </code>=><br>&nbsp;&nbsp;&nbsp; <code class='r'>{1=&gt;[1, 5], 2=&gt;[2, 6], 3=&gt;[3, 7], 0=&gt;[4, 8]}</code><br/>
+<h5>test special html char : &lt; ; &gt;</h5>
+<h5>Hash to array....</h5>
+<p><b>direct conversion !</b></p>
+<p><b>test special html char : &lt; ; &gt;</b></p>
+<code class='c'>@h.to_a() </code>=><br>&nbsp;&nbsp;&nbsp; <code class='r'>[[1, [1, 5]], [2, [2, 6]], [3, [3, 7]], [0, [4, 8]]]</code><br/>
+<code class='c'>@h.keys() </code>=> <code class='r'>[1, 2, 3, 0]</code><br/>
+<code class='c'>@h.values() </code>=><br>&nbsp;&nbsp;&nbsp; <code class='r'>[[1, 5], [2, 6], [3, 7], [4, 8]]</code><br/>
+<code class='c'>@haa="1 ; &lt;div&gt;" </code>=> <code class='r'>"1 ; &lt;div&gt;"</code><br/>
+<code class='c'>@haa.size </code>=> <code class='r'>9</code><br/>
+<br>
+<hr>
+<center>Generated at 2018-12-20T15:12:15+01:00</center>
+</body>
+</html>
