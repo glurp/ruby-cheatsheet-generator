@@ -1,0 +1,26 @@
+* {
+  font-size: small;
+}
+div#cols { 
+  column-width: 20em;
+  column-gap: 4px;
+  column-rule-style: solid;
+  column-rule-color: #044;
+}
+h2,h3,h4,h5 {
+	background: linear-gradient(to right, #005070 0%,#007090 100%);
+	border-radius: 22px 22px;
+	box-shadow: 2px 2px 6px 1px #000;
+	margin-left: 30px;
+	padding-left: 30px;
+}
+h4,h5 {
+	background: linear-gradient(to right, #606060 0%,#808080 100%);
+	border-radius: 7px 7px;
+	box-shadow: 2px 2px 6px 1px #000;
+	margin-left: 3px;
+	padding-left: 30px;
+}
+code.c { background: #EEE}
+code.r { background: #AEE}
+code { padding-left: 10px }

@@ -1,18 +1,20 @@
+> Hello, this is test of cheat-sheet ruby generator.
 # string to array....
  "a,b,c,d".split(/,/)
  "a,bb,c".scan(/\w+/)
-## array to string ....
+# Array to string ....
  [1,2,3].inspect
  [1,2,3].join(",")
-## array to hash ....
+# Array to hash ....
  Hash[1,2,3,4]
- @h=[1,2,3,4,5,6,7,8].group_by {|v| v%4}
-#### test special html char : < ; > 
-#### Hash to array....
+ hdd = [1,2,3,4,5,6,7,8].group_by {|v| v%4}
+# Hash to array....
 > direct conversion !
-> test special html char : < ; > 
- @h.to_a()
- @h.keys()
- @h.values()
-@haa="1 ; <div>" 
-@haa.size
+ hdd.to_a()
+ hdd.keys()
+ hdd.values()
+#### Test special html char 
+> This comment has less-than, greater-than, ampersand : < ; > 
+> Warning! global var/ressources can be  embedded in the docs!
+ARGV.join(",")
+$0
