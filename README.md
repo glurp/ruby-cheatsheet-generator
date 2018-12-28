@@ -18,7 +18,7 @@ See style.css, as (ugly!) exemple.
 
 ***Captions*** : css for separators
 Exemple withe style.css :
-[html](1)http://htmlpreview.github.io/?https://github.com/glurp/ruby-cheatsheet-generator/blob/master/snippets_test.html
+[html](http://htmlpreview.github.io/?https://github.com/glurp/ruby-cheatsheet-generator/blob/master/snippets_test.html
 
 ## TODO
 
