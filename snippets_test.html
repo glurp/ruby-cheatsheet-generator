@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>snippets test</title>
+<style>
+body { margin: 0px; padding: 0px; }
+h1 {text-align: center;}
+h1,h2,h3,h4,h5,h6 { background: #034 ; color: white; padding-left: 3px;}
+code.c { background: #EEE}
+code.r { background: #AEE}
+code { padding-left: 10px }
+</style>
+<style>
+* {
+  font-size: small;
+}
+div#cols { 
+  column-width: 20em;
+  column-gap: 4px;
+  column-rule-style: solid;
+  column-rule-color: #044;
+}
+h2,h3,h4,h5 {
+	background: linear-gradient(to right, #005070 0%,#007090 100%);
+	border-radius: 22px 22px;
+	box-shadow: 2px 2px 6px 1px #000;
+	margin-left: 30px;
+	padding-left: 30px;
+}
+h4,h5 {
+	background: linear-gradient(to right, #606060 0%,#808080 100%);
+	border-radius: 7px 7px;
+	box-shadow: 2px 2px 6px 1px #000;
+	margin-left: 3px;
+	padding-left: 30px;
+}
+code.c { background: #EEE}
+code.r { background: #AEE}
+code { padding-left: 10px }
+
+</style>
+</head>
+<body>
+<h1>snippets test</h1>
+<div id='cols'>
+<p><b>Hello, this is test of cheat-sheet ruby generator.</b></p>
+<h2>string to array....</h2>
+<code class='c'>"a,b,c,d".split(/,/) </code>=> <code class='r'>["a", "b", "c", "d"]</code><br/>
+<code class='c'>"a,bb,c".scan(/\w+/) </code>=> <code class='r'>["a", "bb", "c"]</code><br/>
+<h2>Array to string ....</h2>
+<code class='c'>[1,2,3].inspect </code>=> <code class='r'>"[1, 2, 3]"</code><br/>
+<code class='c'>[1,2,3].join(",") </code>=> <code class='r'>"1,2,3"</code><br/>
+<h2>Array to hash ....</h2>
+<code class='c'>Hash[1,2,3,4] </code>=> <code class='r'>{1=&gt;2, 3=&gt;4}</code><br/>
+<code class='c'>hdd = [1,2,3,4,5,6,7,8].group_by {|v| v%4} </code>=><br>&nbsp;&nbsp;&nbsp; <code class='r'>{1=&gt;[1, 5], 2=&gt;[2, 6], 3=&gt;[3, 7], 0=&gt;[4, 8]}</code><br/>
+<h2>Hash to array....</h2>
+<p><b>direct conversion !</b></p>
+<code class='c'>hdd.to_a() </code>=><br>&nbsp;&nbsp;&nbsp; <code class='r'>[[1, [1, 5]], [2, [2, 6]], [3, [3, 7]], [0, [4, 8]]]</code><br/>
+<code class='c'>hdd.keys() </code>=> <code class='r'>[1, 2, 3, 0]</code><br/>
+<code class='c'>hdd.values() </code>=><br>&nbsp;&nbsp;&nbsp; <code class='r'>[[1, 5], [2, 6], [3, 7], [4, 8]]</code><br/>
+<h5>Test special html char</h5>
+<p><b>This comment has less-than, greater-than, ampersand : &lt; ; &gt;</b></p>
+<p><b>Warning! global var/ressources can be  embedded in the docs!</b></p>
+<code class='c'>ARGV.join(",") </code>=><br>&nbsp;&nbsp;&nbsp; <code class='r'>"--css,style.css,snippets_test.snip.rb"</code><br/>
+</div>
+<br>
+<hr>
+<center>Generated at 2018-12-20 21:39:02+01:00</center>
+</body>
+</html>
